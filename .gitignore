@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Extracted GPX (source of truth is gpx_files.zip)
+gpx_data/
+
+# Generated feature exports
+data/

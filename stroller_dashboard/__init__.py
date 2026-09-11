@@ -1,0 +1,1 @@
+"""Stroller GPX map dashboard."""

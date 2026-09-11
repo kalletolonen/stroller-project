@@ -1,0 +1,17 @@
+{
+  "name": "stroller-project",
+  "install": "pip install -r requirements.txt",
+  "terminals": [
+    {
+      "name": "streamlit",
+      "command": "python3 -m streamlit run stroller_dashboard/app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true",
+      "description": "Streamlit GPX map dashboard served on port 8501."
+    }
+  ],
+  "ports": [
+    {
+      "name": "streamlit",
+      "port": 8501
+    }
+  ]
+}

@@ -28,3 +28,13 @@ For stroller inference we use **only GPX track points** (`<trkpt>`): raw fields 
 ```bash
 python3 scripts/export_point_features.py -o data/point_features.csv
 ```
+
+### Stroller classifier (small-n experiment)
+
+Point features are aggregated per run (mean/std/min/max/median per column), then classified with **leave-one-run-out** cross-validation so each of the 13 activities is held out once.
+
+```bash
+pip install -r requirements.txt
+python3 scripts/train_stroller_classifier.py
+python3 scripts/train_stroller_classifier.py --no-geo   # exclude lat/lon
+```
